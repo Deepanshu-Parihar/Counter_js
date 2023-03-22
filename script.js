@@ -1,23 +1,18 @@
-let saveEl=document.getElementById("save-El");
-let countEl=document.getElementById("count");
-let count=0 
-function countinc(){
-     count=count+1  
-    countEl.innerText=count;
+let count=0;
+function increment(){
+    count=count+1
+    document.getElementById("count").innerText=count;
+    console.log("pressed")
 }
 
-function countdec(){
-     count=count-1  
-   countEl.innerText=count;
+function decrement(){
+    count=count-1  
+    document.getElementById("count").innerText=count;
+    //console.log(count)
 }
 
 function reset(){
-    count=0
-    countEl.innerText=count;
-}
-
-function save(){
-    let countstr=count+" - "
-    saveEl.textContent+=countstr
-    countEl.innerText=0
+    count=0 
+    document.getElementById("count").innerText=count;
+    //console.log(count)
 }
